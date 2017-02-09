@@ -1,0 +1,24 @@
+body{
+
+}
+
+*{
+	outline: none;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix::after{
+	content: '';
+	clear: both;
+	display: block;
+}
