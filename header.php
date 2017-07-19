@@ -2,13 +2,8 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 global $APPLICATION;
-global $SOCIALIMAGES;
 use \Bitrix\Main\Page\Asset;
-include_once('parameters.php'); //Необходима настройка файла (!!!)
-$SOCIALIMAGES = array(
-	'IMAGE' => SITE_TEMPLATE_PATH . '/images/social_540x540.jpg',
-	'IMAGE_BIG' => SITE_TEMPLATE_PATH . '/images/social_1200x630.jpg',
-);
+include_once('meta.php');
 ?>
 <!doctype html>
 <html lang="ru">
