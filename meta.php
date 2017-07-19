@@ -1,6 +1,7 @@
 <?
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 use \Bitrix\Main\Page\Asset;
+include(".settings.php");
 global $arTemplateParams;
 Asset::getInstance()->addString( '<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->', true, 'BEFORE_CSS' );
 if($arTemplateParams["ENABLE_JQUERY"]){
