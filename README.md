@@ -6,8 +6,11 @@ Clear site template for a CMS Bitrix. This template can help you crate a new pro
 We use this template in IT-INFINITY company (https://itinfinity.ru).
 
 ## Install
-1.  Copy template in /local/templates/your_template/.
-2.  Select template in site settings.
-3.  Config .settings.php in template root path.
+1. **ssh:>** cd site_path
+2. **ssh:>** cd /local/templates/
+3. **ssh:>** git clone https://github.com/KarionovV/bitrixclear.git
+4. Rename "bitrixclear", if you need
+5. Select template in site settings.
+6. Config .settings.php in template root path.
 
 Enjoy
