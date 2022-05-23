@@ -1,13 +1,13 @@
-# Чистый шаблон 1С-Битрикс / Clear template 1C-Bitrix
+# Clear template for CMS Bitrix
 
-Чистый шаблон сайта для CMS 1С-Битрикс. Данный шаблон позволяет избавится от рутины при создании новых проектов.
-Используется в веб студии IT-INFINITY (https://www.it-infinity.ru).
-Шаблон распространяется свободно и мы не против, если он поможет ещё кому-нибудь.
+**update 23 may 2022**
 
-## Установка
-1.  Скопировать шаблон в /local/templates/ваше_название/.
-2.  Выбрать шаблон в настройках сайта (Рабочий стол > Настройки > Настройки продукта > Сайты > Список сайтов) в качестве шаблона по-умолчанию.
-3.  Настроить файл .settings.php в корне шаблона.
+Clear site template for a CMS Bitrix. This template can help you crate a new project.
+We use this template in IT-INFINITY company (https://itinfinity.ru).
 
-## TODO
-Допилить META теги для социальных сетей и Google.
+## Install
+1.  Copy template in /local/templates/your_template/.
+2.  Select template in site settings.
+3.  Config .settings.php in template root path.
+
+Enjoy

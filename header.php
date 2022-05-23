@@ -1,19 +1,23 @@
 <?
+/**
+ * @global $APPLICATION;
+ * @var $arTemplateParams - included from .settings.php
+ */
+
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-IncludeTemplateLangFile(__FILE__);
-global $APPLICATION;
-use \Bitrix\Main\Page\Asset;
-include_once('meta.php');
+use Bitrix\Main\Localization\Loc as Loc;
+use \Bitrix\Main\Page\Asset as Asset;
+include ".settings.php";
 ?>
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="<?=$arTemplateParams["HTML_LANG"];?>">
 	<head>
 		<?Asset::getInstance()->addJs( SITE_TEMPLATE_PATH . '/js/init.js');?>
 
+		<?Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/main.css' );?>
 
-		<?Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/reset.css' );?>
-		<?Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/fonts.css' );?>
 		<?$APPLICATION->ShowHead();?>
+
 		<title><?$APPLICATION->ShowTitle()?></title>
 	</head>
 	<body>

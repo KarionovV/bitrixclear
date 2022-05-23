@@ -1,28 +1,11 @@
-<?
-global $arTemplateParams;
-
-$arTemplateParams = array(
+<?$arTemplateParams = array(
     //Main settings
-    //Основные настройки
-    'META_VIEWPORT' => '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">',
-    'META_AUTHOR' => 'Веб студия IT-INFINITY',
-    'ENABLE_JQUERY' => true,                    //Подключает JQuery с Google CDN
-
-    //Social images
-    //Изображения для социальных сетей
-    'SOCIAL_IMAGE' => SITE_TEMPLATE_PATH . '/images/social_540x540.jpg',
-    'SOCIAL_IMAGE_BIG' => SITE_TEMPLATE_PATH . '/images/social_1200x630.jpg',
-
-	//Google
-	'LATITUDE' => 0,							//Широта
-	'LONGITUDE' => 0,							//Долгота
-	'COUNTRY_NAME' => 'Россия',					//Страна
-	'POSTAL_CODE' => '654000',					//Почтовый индекс
-	'LOCALITY' => 'Новокузнецк',				//Город
-	'STREET_ADDRESS' => 'проспект Ермакова',	//Улица'
-	'PHONE_NUMBER' => '+7(3843)910-190',		//Номер телефона
-
-	//Twitter
-	'CREATOR' => '@unnamed'						//Аккаунт в твиттере
+    'HTML_LANG' => "en",
+    'META_VIEWPORT' => '<meta name="viewport" content="width=device-width, initial-scale=1">',
+    'META_AUTHOR' => 'Author name',
+    'ENABLE_JQUERY' => false,           //Include JQuery from Google CDN
+    'ENABLE_RESET_CSS' => false,        //Include Reset CSS from css/vendor/rest.css
+    'ENABLE_HTML5SHIV' => false,        //Include HTML5 Shiv from js/vendor/html5shiv.min.js
+    'ENABLE_BOOTSTRAP' => false,        //Include Bootstrap 5.2.0-beta1 from (js|css)/vendor/bootstrap/boostrap.min.(js|css)
 );
 ?>
