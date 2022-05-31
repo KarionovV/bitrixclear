@@ -7,7 +7,7 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 use Bitrix\Main\Localization\Loc as Loc;
 use \Bitrix\Main\Page\Asset as Asset;
-include ".settings.php";
+include $_SERVER["DOCUMENT_ROOT"] . SITE_TEMPLATE_PATH . "/.settings.php";
 ?>
 <!DOCTYPE html>
 <html lang="<?=$arTemplateParams["HTML_LANG"];?>">
